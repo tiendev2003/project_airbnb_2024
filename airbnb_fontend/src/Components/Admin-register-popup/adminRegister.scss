@@ -1,0 +1,140 @@
+.admin-register,
+.person-update-modal{
+    width: 50%;
+    height: 600px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+    overflow: hidden;
+    background-image: url('/src/assets//Image/admin-im.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        z-index: -1;
+        opacity: 0.8;
+    }
+    form{
+        width: 100%;
+        height: 100%;
+        padding:  2.5rem 2rem 2rem;
+         h1{
+        text-align: center;
+        margin-bottom: 2rem;
+        color: gray;
+        }
+        .birth-day{
+            label{
+                font-size: 1.6rem;
+            }
+            input{
+                font-size: 1.6rem;
+                font-weight: 600;
+            }
+        }
+        .date-pick{
+            input{
+                height: 20px;
+            }
+        }
+    }
+    .mui-grid-admin{
+        margin: 0;
+        width: 100%;
+        .mui-item-grid-admin{
+            .mui-form-control-admin{
+                width: 90%;
+                margin: 0 auto;
+                input{
+                    font-size: 1.8rem;
+                }
+                label{
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                }
+                p{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+    .button-group-admin-register{
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+        padding: 3rem;
+        button{
+           width: 12%;
+           height: 40px;
+           font-size: 1.4rem;
+        }
+    }
+   
+}
+.person-update-modal{
+    background-image: url('https://img.freepik.com/free-vector/web-page-visualization-protocol-procedure-dynamic-software-workflow-full-stack-development-markup-administrate-system-driver-shared-memory-vector-isolated-concept-metaphor-illustration_335657-4299.jpg?w=1380&t=st=1688395750~exp=1688396350~hmac=dac53bd9e4016eae531eadc29563b34d7074aac6ca2fb2e670432bf3388a43f9');
+    height: 450px;
+}
+.card-detail{
+    border-radius: 8px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('https://img.freepik.com/free-photo/colorful-block-print-frame-beige-background_53876-104266.jpg?w=1800&t=st=1688394091~exp=1688394691~hmac=4a0749a5ae37101c2430d8bfd91595b1846cb3286c7ead0294623e20f808a604');
+    background-size: cover;
+    background-position: center;
+    .card-wrapper{
+        background-color:transparent;
+        .mui-card-content{
+            padding: 2rem;
+            .mui-typography-card{
+                h4{
+                    font-weight: 700;
+                    text-decoration: underline;
+                }
+                ul{
+                    list-style: disc;
+                    padding-left: 2rem;
+                    li{
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                        span{
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+        .btn-group-card{
+            justify-content: flex-end;
+            button{
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576.98px) {
+    .card-detail{
+        width: 95%;
+        .card-wrapper{
+            width: unset!important;
+        }
+    }
+    .person-update-modal{
+        height: 625px;
+        width: 95%;
+    }
+}

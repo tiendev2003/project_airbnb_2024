@@ -1,0 +1,156 @@
+.explore-location{
+    padding: 3.2rem 0;
+    border-bottom:  0.5px solid #80808077;
+    .mui-box{
+        padding: 3rem 0;
+        .mui-grid{
+            display: flex;
+            .mui-item{
+                box-shadow: unset;
+                background-color: transparent;
+                font-size: 1.6rem;
+                font-weight: 400;
+                transition: all .5s;
+                &:hover{
+                    background-color: rgba(239, 187, 187, 0.182);
+                    img{
+                        scale: 110%;
+                    }
+                }
+                .explore-location-item{
+                    width: 100%;
+                    display: flex;
+                    gap: 3rem;
+                    text-align: left;
+                    font-size: 1.6rem;
+                    color: black;
+                    img{
+                        width: 7rem;
+                        height: 7rem;
+                        border-radius: 7px;
+                        transition: all .5s;
+                    }
+                    .explore-location-item-text{
+                        p{
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mySwiper{
+        width: 100%;
+        display: none;
+        .swpper-slice-custom{
+            height: 300px;
+            .swiper-item-custom{
+                width: 100%;
+                height: 100%;
+                background-color: #ececec;
+                border-radius: 10px;
+                a{
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    .explore-location-item{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: left;
+                        font-size: 1.6rem;
+                        color: black;
+                        img{
+                            width: 90%;
+                            height: 60%;
+                            border-radius: 7px;
+                            transition: all .5s;
+                            object-fit: cover;
+                        }
+                        .explore-location-item-text{
+                            text-align: center;
+                            margin-top: 2rem;
+                            p{
+                                font-weight: 600;
+                                font-size: 1.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:992px) {
+    .explore-location{
+        .mui-box{
+            .mui-grid{
+                    .item-location{
+                        width: 33.33333333%;
+                    }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .explore-location{
+        .mui-box{
+            .mui-grid{
+                    .item-location{
+                        width:50%
+                    }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .explore-location{
+        h1{
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width:414px) {
+    .explore-location{
+        h1{
+            font-size: 1.8rem;
+        }
+        .mui-box{
+            .mui-grid{
+                .item-location{
+                    width:100%
+                }
+                .item-location-detail{
+                    .explore-location-item{
+                        .explore-location-item-text{
+                            p{
+                                font-size: 2rem;
+                            }
+                            span{
+                                font-size: 1.8rem;
+                                color: #b6233e8a;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .mySwiper{
+            display: block;
+        }
+        .mui-box{
+            .mui-grid{
+                display: none;
+            }
+        }
+    }
+
+}

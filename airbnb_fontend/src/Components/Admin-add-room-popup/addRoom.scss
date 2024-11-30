@@ -1,0 +1,253 @@
+.add-room,
+.room-update-modal,
+.add-location-modal,
+.update-location-modal{
+    width: 60%;
+    height: 600px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 2.5rem 2rem 2rem;
+    background-image: url('https://img.freepik.com/free-photo/illuminated-room_1203-133.jpg?size=626&ext=jpg&ga=GA1.2.1470230597.1688300204&semt=ais');
+    background-size: cover;
+    &::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #ffffff78;
+        z-index: -1;
+    }
+    form{
+        width: 100%;
+        height: 100%;
+        .selection-group-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4rem;
+            padding: 1.6rem;
+            margin-top: 2rem;
+            .selection-group{
+                display: flex;
+                gap: 2.5rem;
+                label{
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                }
+                select{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        .mui-grid-container-room{
+            margin: 0;
+            .mui-grid-item-room{
+                .mui-form-control-admin{
+                    width: 60%;
+                    label{
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                        margin-bottom: 1rem;
+                    }
+                    input{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+    h1{
+        text-align: center;
+    }
+    .button-group-admin-room{
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
+        padding-right: 1.6rem;
+        margin-top: 4rem;
+        button{
+            font-size: 1.6rem;
+        }
+    }
+}
+.room-update-modal{
+    background-image: url('https://img.freepik.com/free-vector/instruction-manual-guide-document-with-cogwheel-isolated-design-element-male-character-analyzing-file-business-analysis-data-processing-updating_335657-2607.jpg?w=1380&t=st=1688397206~exp=1688397806~hmac=2f027be89e930d268d449fe071c3c47ec10b0b26d7d61d1b658965f33bd38608');
+    background-position: center;
+    &::before{
+        background-color: #eaecffdb;
+    }
+}
+.admin-detai-room{
+    width: 60%;
+    height: 600px;
+    overflow: hidden;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    padding: 2rem;
+    font-size: 1.6rem;
+    background-image: url('https://img.freepik.com/premium-photo/modern-interior-design-3d-illustration_259454-1571.jpg?w=1800');
+    background-size: cover;
+    h2{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .detail{
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+        border-radius: 8px;
+        padding: 1rem;
+        backdrop-filter: blur(8px);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        img{
+            width: 50%;
+            height: 200px;
+            border-radius: 8px;
+        }
+        .desc{
+            font-weight: 600;
+            span{
+                font-weight: 400;
+            }
+        }
+    }
+    .sub-info{
+        border-radius: 8px;
+        padding: 1rem;
+        margin-top: 2rem;
+        backdrop-filter: blur(8px);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        p{
+            font-weight: 600;
+            span{
+                font-weight: 400;
+            }
+        }
+        h3{
+            text-decoration: underline;
+            margin-bottom: 1rem;
+        }
+        .extra-ben{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            li{
+                font-weight: 500;
+                span{
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .cancel-btn{
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
+        button{
+            font-size: 1.4rem;
+            width: 7.2rem;
+        }
+    }
+}
+.add-location-modal,
+.update-location-modal{
+    height: 400px ;
+    background-image: url('https://img.freepik.com/premium-photo/rock-podium-tropical-forest-product-presentation-is-view-sky_41470-5023.jpg?w=1480');
+    background-position: center;
+    &::before{
+        background-color: #afc5d7b0;
+    }
+    form{
+        .mui-grid-container-room{
+            .mui-grid-item-room{
+                .mui-form-control-admin{
+                    width: 80%;
+                    label{
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        margin-bottom: 1rem;
+                        color: black;
+                    }
+                    input{
+                        font-size: 2rem;
+                    }
+                    p{
+                        font-size: 1.4rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+.update-location-modal{
+    height: 600px;
+    background-image: url('https://img.freepik.com/free-photo/falling-leaf-with-blurred-background_23-2148232268.jpg?w=1800&t=st=1688528493~exp=1688529093~hmac=a5ead6726b20554f366ebd5f098964ba5a9ddd8ac5b162df61cda5869c2b2df0');
+    &::before{
+        background-color: #daddbf66;
+    }
+    form{
+        .mui-grid-container-room{
+            .mui-grid-item-room{
+                img{
+                    width: 90%;
+                    height: 200px;
+                    border-radius: 5px;
+                    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+                }
+            }}
+    }
+}
+
+@media screen and (max-width: 576.98px) {
+    .update-location-modal{
+        width: 95%;
+        height: 82%;
+        overflow-y: auto;
+        .button-group-admin-room{
+            padding-bottom: 2rem;
+        }
+    }
+    .admin-detai-room{
+        width: 95%;
+        height: 90%;
+        overflow-y: auto;
+    }
+    .room-update-modal{
+        width: 95%;
+        height: 90%;
+        overflow-y: auto;
+        &::before{
+            height: 115%;
+        }
+    }
+}
+
+@media screen and (max-width:414px) {
+    .room-update-modal{
+        &::before{
+            height: 210%;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .room-update-modal{
+        &::before{
+            height: 255%;
+        }
+    }
+}

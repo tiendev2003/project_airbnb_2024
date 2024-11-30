@@ -1,0 +1,51 @@
+.manage-user,
+.manage-booked-room,
+.manage-location{
+    padding: 3rem 0;
+    .mui-grid-user{
+        width: 100%;
+    }
+    .button-group{
+        display: flex;
+        gap: 5px;
+    }
+    .search-user{
+        margin: 1rem 0;
+        display: flex;
+        gap: 1rem;
+        .input-search{
+            width: 80%;
+        }
+        button{
+            width: 20%;
+            height: 47.38px;
+            outline: unset;
+            border: unset;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #FF385C;
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.6rem;
+        }
+    }
+    .button-add-admin{
+        font-size: 1.6rem;
+        font-weight: 600;
+        outline: unset;
+        border: unset;
+    }
+}
+.manage-booked-room{
+    .MuiDataGrid-footerContainer{
+        p{
+            margin-bottom: 0;
+            font-size: 1.6rem;
+        }
+    }
+}
+.manage-user{
+    .mui-grid-user{
+        height: 480px;
+    }
+}
