@@ -66,7 +66,7 @@ export const paymentWithMomo = async (req, res, next) => {
   var orderInfo = "pay with MoMo";
   var redirectUrl = "http://localhost:3000/Detail/profile";
   var ipnUrl =
-    "https://dfe4-116-98-165-237.ngrok-free.app/api/dat-phong/callback-with-momo";
+    "https://d21c-116-98-165-237.ngrok-free.app/api/dat-phong/callback-with-momo";
   var amount = total.toString();
   var requestType = "payWithMethod";
   var extraData = "";
